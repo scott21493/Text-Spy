@@ -1,0 +1,3 @@
+Text spy is an Android app which allows users to get all text messages to an email address.
+
+Current issue with the test email button on the initial setup.  Needs to be changed to an asynchronous task.
