@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    
+	<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="15dp"
+    android:orientation="vertical" >
+    
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Setup Instructions"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To get text messages to your email you must first enter your email address (must be gmail) and password for the email account.  It is HIGHLY RECOMMENDED that you create a new gmail account.  There can be a high number of emails sent to the account."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/mailer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Mail Account"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="email@gmail.com" />
+
+    <TextView
+        android:id="@+id/tvPW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number To Use To Stop Messages"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="When this phone number sends a certain message (set below) emails will stop being sent." />
+
+    <EditText
+        android:id="@+id/usernumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stopping Message"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="When this message is received by the phone number set above the emails will stop being sent." />
+
+    <EditText
+        android:id="@+id/donemessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <CheckBox
+        android:id="@+id/remover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Icon on Restart? (Uncheck to keep icon)" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Once you save the email address and password you must restart the phone to remove the icon from the list of android apps.  Testing the email address may take a moment to go through."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout 
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"  
+        android:weightSum="100" >
+    <Button
+        android:id="@+id/start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="35"
+        android:text="Save and Start Watching" />
+    
+        <Button
+        android:id="@+id/test"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="65"
+        android:text="Test Email" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
